@@ -32,13 +32,15 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    /* border-bottom: 1px solid #0f2027; */
 }
 
 .nav-menu{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 60px;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
 }
 
 .nav-brand{
@@ -94,6 +96,7 @@ img {
     max-width: 100%;
 }
 
+
 .text-center{
     text-align: center;
 }
@@ -102,7 +105,8 @@ section{
     padding: 4rem 0;
 }
 
-.card{
+.card,
+.card-transparent:hover{
     padding: 1%;
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -112,6 +116,21 @@ section{
     background-color: whitesmoke;
     border-radius: 1%;
 }
+
+.card-transparent{
+    padding: 1%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transition: 0.3s;
+    margin-bottom: 30px;
+    display: block;
+    max-width: 100%;
+    background: rgba(255,255,255,.2);
+    border-radius: 1%;
+}
+
+/* .card:hover{
+    transform: scale(1.05);
+} */
 
 .card-btn{
     width: 100%;
@@ -192,10 +211,12 @@ section{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #262626;
+        /* background-color: #262626; */
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        border: none;
     }
 
     .nav-item{
