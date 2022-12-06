@@ -39,8 +39,6 @@ a{
     display: flex;
     justify-content: space-between;
     gap: 60px;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
 }
 
 .nav-brand{
@@ -91,13 +89,39 @@ p {
     margin-bottom: 1em;
 }
 
+.a-blue{
+    color: blue;
+}
 img {
     display: block;
     max-width: 100%;
 }
 
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control.failed input {
+    outline: #ff3860 solid 2px;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
+
+
+.input-control small {
+    color: #ff3860;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
 
 .text-center{
+    margin-top: 5px;
     text-align: center;
 }
 

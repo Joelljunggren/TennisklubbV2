@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-brand">TENNIS</a>
+    
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="split">
+                <div class="card">
+                    <img src="https://picsum.photos/600/400" alt="randomly generated image">  
+                    <h2 class="text-center">Boka banor här!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur error reiciendis cumque labore at minima doloribus expedita? Ducimus omnis dicta error molestiae debitis pariatur quas, dolores molestias deleniti suscipit illum.</p>
+                </div>
+                <div class="card">
+                    <form id="form">
+                        <div class="input-control">
+                            <label for="namn">Namn</label>
+                            <input id="namn" name="namn" type="text" placeholder="Fyll i ditt namn">
+                            <small></small>
+                        </div>
+                        <div class="input-control">
+                            <label for="medlemsnr">Medlemsnummer</label>
+                            <input id="medlemsnr" name="medlemsnr" type="text" placeholder="Fyll i ditt medlemsnummer">
+                            <small></small>
+                        </div>
+                        <div class="input-control">
+                            <label for="bastu">Antal banor</label>
+                            <select id="bastu" name="bastu">
+                                <option value="" selected disabled hidden>Välj här</option>
+                                <option value="våtbastu">Våtbastu</option>
+                                <option value="torrbastu">Torrbastu</option>
+                                <option value="infraröd">Infraröd bastu</option>
+                            </select>
+                            <small></small>
+                        </div>
+                        <div class="input-control">
+                            <label for="datum">Datum du vill boka</label>
+                            <input id="datum" name="datum" type="datetime-local">
+                            <small></small>
+                        </div>
+                        <button class="card-btn" type="submit" id="submit">Slutför bokning</button>
+                    </form>            
+                </div>                       
+            </div>
+                </section>
+
+</body>
+</html>
