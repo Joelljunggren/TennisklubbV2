@@ -19,6 +19,7 @@ const bastu = document.getElementById('bastu')
 const banor = document.getElementById('banor')
 const datum = document.getElementById('datum')
 
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -49,21 +50,21 @@ function validateInputs(){
     }
 }
 
-// function validateInputsBastu(){
-//     const namnValue = namn.value.trim()
-//     const medlemsnrValue = medlemsnr.value.trim()
-//     const datumValue = datum.value.trim()
+function validateInputsBastu(){
+    const namnValue = namn.value.trim()
+    const medlemsnrValue = medlemsnr.value.trim()
+    const datumValue = datum.value.trim()
 
-//     if(namnValue == ''){
-//         validateError(namn, 'Du måste fylla i ditt namn')
-//     }
-//     if(medlemsnrValue == ''){
-//         validateError(medlemsnr, 'Du måste fylla i ditt medlemsnummer')
-//     }
-//     if(datumValue == ''){
-//         validateError(datum, 'Du måste välja ett bokningsdatum')
-//     }
-// }
+    if(namnValue == ''){
+        validateError(namn, 'Du måste fylla i ditt namn')
+    }
+    if(medlemsnrValue == ''){
+        validateError(medlemsnr, 'Du måste fylla i ditt medlemsnummer')
+    }
+    if(datumValue == ''){
+        validateError(datum, 'Du måste välja ett bokningsdatum')
+    }
+}
 
 function validateError(input, errorMsg){
     const inputControl = input.parentElement;
