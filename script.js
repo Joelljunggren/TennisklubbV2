@@ -17,11 +17,16 @@ const namn = document.getElementById('namn')
 const medlemsnr = document.getElementById('medlemsnr')
 const bastu = document.getElementById('bastu')
 const banor = document.getElementById('banor')
+const datum = document.getElementById('datum')
 
 form.addEventListener('submit', e => {
     e.preventDefault();
 
     validateInputs();
+    // namn.value = ''
+    // medlemsnr.value = ''
+    // banor.value = ''
+    // datum.value = ''
 })
 
 function validateInputs(){

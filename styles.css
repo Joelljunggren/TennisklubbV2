@@ -125,6 +125,9 @@ img {
     text-align: center;
 }
 
+.text-right {
+    text-align: end;
+}
 section{
     padding: 4rem 0;
 }
@@ -139,6 +142,17 @@ section{
     max-width: 100%;
     background-color: whitesmoke;
     border-radius: 1%;
+}
+
+.cardv2{
+    padding: 1%;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    display: block;
+    max-width: 100%;
+    background-color: whitesmoke;
+    border-radius: 1%;
+    align-items: center;
 }
 
 .card-transparent{
@@ -175,6 +189,18 @@ select{
     border: solid 0.5px black;
     border-radius: 5px;
     color: whitesmoke;
+}
+
+.card-btn-small{
+    align-items: center;
+    width: 50%;
+    height: 2rem;
+    background: #0f2027;
+    text-decoration: none;
+    border: solid 0.5px black;
+    border-radius: 5px;
+    color: whitesmoke;
+
 }
 
 .card-btn:hover{
