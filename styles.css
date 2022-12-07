@@ -258,6 +258,12 @@ select{
         margin: 16px 0;
     }
 
+    .nav-item-active{
+        margin: 16px 0;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
     .nav-menu.active{
         left: 0;
     }

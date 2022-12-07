@@ -16,7 +16,7 @@ const form = document.getElementById('form')
 const namn = document.getElementById('namn') 
 const medlemsnr = document.getElementById('medlemsnr')
 const bastu = document.getElementById('bastu')
-const datum = document.getElementById('datum')
+const banor = document.getElementById('banor')
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -27,8 +27,8 @@ form.addEventListener('submit', e => {
 function validateInputs(){
     const namnValue = namn.value.trim();
     const medlemsnrValue = medlemsnr.value.trim();
-    const bastuValue = bastu.value.trim();
     const datumValue = datum.value.trim();
+    const banorValue = banor.value.trim();
 
     if(namnValue == ''){
         validateError(namn, 'Du måste fylla i ditt namn')
@@ -36,13 +36,29 @@ function validateInputs(){
     if(medlemsnrValue == ''){
         validateError(medlemsnr, 'Du måste fylla i ditt medlemsnummer')
     }
-    if(bastuValue == ''){
-        validateError(bastu, 'Välj bastusort')
-    }
     if(datumValue == ''){
         validateError(datum, 'Du måste välja ett bokningsdatum')
     }
+    if(banorValue == ''){
+        validateError(banor, 'Du måste fylla i antal banor')
+    }
 }
+
+// function validateInputsBastu(){
+//     const namnValue = namn.value.trim()
+//     const medlemsnrValue = medlemsnr.value.trim()
+//     const datumValue = datum.value.trim()
+
+//     if(namnValue == ''){
+//         validateError(namn, 'Du måste fylla i ditt namn')
+//     }
+//     if(medlemsnrValue == ''){
+//         validateError(medlemsnr, 'Du måste fylla i ditt medlemsnummer')
+//     }
+//     if(datumValue == ''){
+//         validateError(datum, 'Du måste välja ett bokningsdatum')
+//     }
+// }
 
 function validateError(input, errorMsg){
     const inputControl = input.parentElement;
